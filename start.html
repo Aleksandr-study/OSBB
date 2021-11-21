@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Google Map</h1>
+
+<div id="map" style="width:50%;height:400px;"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(50.4, 30.5), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvT7DguGicOGgtnl1q2Z8Dckr2lfg0-54&callback=myMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyDvT7DguGicOGgtnl1q2Z8Dckr2lfg0-54" async defer></script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162758.4773347291!2d30.3926090573222!3d50.40195139688684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1637224370335!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>
+
