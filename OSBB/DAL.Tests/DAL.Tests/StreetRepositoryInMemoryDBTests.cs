@@ -17,11 +17,11 @@ namespace DAL.Tests
         {
 
             var options = new DbContextOptionsBuilder<OSBBContext>()
-                .UseSqlite("DataSource=:memory:")
+                //.UseSqlite("DataSource=:memory:")
                 .Options;
 
             var context = new OSBBContext(options);
-            context.Database.OpenConnection();
+            //context.Database.OpenConnection();
             context.Database.EnsureCreated();
             return context;
         }

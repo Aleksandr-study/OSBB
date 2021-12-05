@@ -10,8 +10,8 @@ using OSBB.Security;
 using OSBB.Security.Identity;
 using System;
 using System.Collections.Generic;
-using Xunit;
 using System.Linq;
+using Xunit;
 
 namespace BLL.Tests
 {
